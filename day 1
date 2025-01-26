@@ -1,0 +1,59 @@
+//code no 1 --- Add 3 Numbers in the Main Method
+
+
+public class AddNumbers {
+    public static void main(String[] args) {
+        int num1 = 5, num2 = 10, num3 = 15;
+        int sum = num1 + num2 + num3;
+        System.out.println("The sum of " + num1 + ", " + num2 + ", and " + num3 + " is: " + sum);
+    }
+}
+
+
+// code no -- 2 Find Prime Number
+
+public class PrimeNumber {
+    public static void main(String[] args) {
+        int num = 29; // You can change this number to check other numbers
+        boolean isPrime = true;
+
+        // Check if num is prime
+        for (int i = 2; i <= num / 2; i++) {
+            if (num % i == 0) {
+                isPrime = false;
+                break;
+            }
+        }
+
+        if (isPrime && num > 1) {
+            System.out.println(num + " is a prime number.");
+        } else {
+            System.out.println(num + " is not a prime number.");
+        }
+    }
+}
+
+
+//code no 3 --- Finding Odd and Even Numbers Within an Array
+
+  
+public class OddEvenArray {
+    public static void main(String[] args) {
+        int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
+        System.out.println("Odd numbers:");
+        for (int num : numbers) {
+            if (num % 2 != 0) {
+                System.out.print(num + " ");
+            }
+        }
+
+        System.out.println("\nEven numbers:");
+        for (int num : numbers) {
+            if (num % 2 == 0) {
+                System.out.print(num + " ");
+            }
+        }
+    }
+}
+
